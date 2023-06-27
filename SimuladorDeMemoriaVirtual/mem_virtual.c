@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <stdbool.h>
 
 // Declaração das funções
+void AddNewPage(char value[9]);
+void Random(char value[9]);
+
 typedef struct Page{
 	char address[9];
 	struct Page *next;
@@ -36,4 +42,19 @@ void AddNewPage(char value[9]){
 		usedPages++; // Se ainda houver espaço disponível na memória, incrementa o número de páginas usadas
 
 	writes++; // Contabiliza uma escrita
+}
+
+// Implementa o algoritmo Random (Aleatório)
+void Random(char value[9]){
+	writes++; // Contabiliza uma escrita
+
+	srand(time(NULL)); // Inicializa a semente do gerador de números aleatórios com o tempo atual
+	int index = rand() % usedPages; // Gera um índice aleatório dentro do intervalo das páginas usadas
+	Page *tmp = first;
+
+	for (int i = 0; i < index; i++){
+		tmp = tmp->next; // Percorre a lista de páginas até o índice gerado
+	}
+
+	strcpy(tmp->address, value); // Substitui o endereço da página encontrada pelo novo endereço
 }
