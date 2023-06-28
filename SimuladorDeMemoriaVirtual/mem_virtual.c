@@ -7,6 +7,8 @@
 // Declaração das funções
 void AddNewPage(char value[9]);
 void Random(char value[9]);
+void LRU(char value[9]);
+void FIFO(char value[9]);
 
 typedef struct Page{
 	char address[9];
