@@ -9,6 +9,10 @@ void AddNewPage(char value[9]);
 void Random(char value[9]);
 void LRU(char value[9]);
 void FIFO(char value[9]);
+bool Find(char value[9]);
+void ReplacePage(char value[9]);
+void WriteAddress(char value[9]);
+void FreeMemory();
 
 typedef struct Page{
 	char address[9];
