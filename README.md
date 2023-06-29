@@ -31,7 +31,7 @@ Neste projeto foram implementados três tipos de algoritmos de substituição de
 
     sim_virtual lru arquivo.log 4 128
 
-## Resultados da execução do programa, testando cada algoritmo: 
+## Resultados da execução do programa testando cada algoritmo: 
 <div align="center">
     
 ### LRU
