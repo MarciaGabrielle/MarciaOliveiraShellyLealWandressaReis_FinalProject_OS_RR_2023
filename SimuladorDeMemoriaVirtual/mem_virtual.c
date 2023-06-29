@@ -98,7 +98,7 @@ int main(int argc, char *argv[])
 		printf("ERRO: Arquivo de entrada invalido.");
 		return 0;
 	}
-
+    //relatório
 	printf("\nExecutando o simulador...\n");
 	printf("Arquivo de entrada: %s\n", filePath);
 	printf("Tamanho da memoria: %iKB\n", memSize);
@@ -106,6 +106,8 @@ int main(int argc, char *argv[])
 	printf("Tecnica de reposicao: %s\n", alg);
 	printf("Paginas lidas: %i\n", faults);
 	printf("Paginas escritas: %i\n", writes);
+    printf("Numero de acertos:%i\n", hits);
+    printf("Numero de erros:%i\n ", misses);
 
 	FreeMemory(); // Libera a memória alocada para as páginas
 	
