@@ -13,9 +13,9 @@ Desde os primórdios da computação, é comum a existência de programas maiore
 
 </div>
 
-Daí a importância da utilização da memória virtual que é uma técnica emepregada para o gerenciamento da memória  permitindo que o sistema operacional aloque espaço em disco para complementar a memória física criando uma ilusão de que o sistema possui mais memória do que realmente tem.
+Daí a importância da utilização da memória virtual que é uma técnica empregada para o gerenciamento da memória permitindo que o sistema operacional aloque espaço em disco para complementar a memória física criando uma ilusão de que o sistema possui mais memória do que ele realmente tem.
 
-A memória virtual também utiliza algumas técnica para otimizar esse gerenciamento de memória, como o uso de algoritmos de substituição de página. 
+A memória virtual também utiliza algumas técnicas para otimizar esse gerenciamento de memória, como o uso de algoritmos de substituição de página. 
 
 Neste projeto foram implementados três tipos de algoritmos de substituição de página. São eles: 
 
@@ -25,11 +25,11 @@ Neste projeto foram implementados três tipos de algoritmos de substituição de
 
 ### Para compilar o código:
 
-    gcc mem_virtual -o mem_vitual
+    gcc mem_virtual.c -o mem_virtual
 
 ### Para executar o código:
 
-    sim_virtual lru arquivo.log 4 128
+    ./mem_virtual lru arquivo.log 4 128
 
 ## Resultados da execução do programa testando cada algoritmo: 
 <div align="center">
